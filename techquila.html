@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Head Navbar</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="https://fontawesome.com/icons" rel="icon">
+    <script src="https://kit.fontawesome.com/9cb8fe11af.js" crossorigin="anonymous"></script>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="src/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="src/css/style.css" rel="stylesheet">
+    <style>
+      h2 {
+  color: Black;
+  font-family: Monaco;
+  font-size: 300%;
+}
+        #footer {
+            position: fixed;
+            bottom: 0;
+            width: 80%;
+            /* Height of the footer*/ 
+            background: grey;
+        }
+        h3 {
+            font-size: 5em;
+            font-family: serif;
+            color: transparent;
+            text-align: center;
+            animation: effect 2s linear infinite;
+        }
+        body{
+            background-image: 'tech.jpg';
+        }
+ 
+        @keyframes effect {
+            0% {
+                background: linear-gradient(
+                        #008000, #00FF00,#3CE7D7, #000FFF);
+                -webkit-background-clip: text;
+            }
+ 
+            20% {
+                background: linear-gradient(
+                        red,#3CE7D7, #000FFF);
+                -webkit-background-clip: text;
+            }
+            40% {
+                background: linear-gradient(
+                        red,lightgreen, blue);
+                -webkit-background-clip: text;
+            }
+            60% {
+                background: linear-gradient(
+                        Black,pink, violet);
+                -webkit-background-clip: text;
+            }
+            80% {
+                background: linear-gradient(
+                        powderblue,maroon);
+                -webkit-background-clip: text;
+            }
+            100% {
+                background: linear-gradient(
+                        green,lightgreen, lime);
+                -webkit-background-clip: text;
+            }
+
+        }
+    </style>
+    <script>
+ toggle();{
+    $('.sidebar, .content').toggleClass("open");
+  }
+  
+</script>
+</head>
+
+<body>
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-light navbar-light">
+                <div class="navbar-nav w-100">
+                           <a href="#" class="nav-item nav-link active"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                    <a href="#" class="nav-item nav-link "><i class="fa-solid fa-address-card"></i>Events</a>
+                    <a href="#" class="nav-item nav-link"><i class="fa fa-copyright"></i>Credits</a>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+           <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+            <a class="sidebar-toggler flex-shrink-0" (click)="toggle()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </nav>
+        <!-- Navbar End -->
+
+            <div class="Bread pt-1 px-1">
+                <body>
+                    <!-- Breadcrums Start -->
+                    <div style="margin:20px;">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Home</a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </body>
+            </div>
+
+        <section><h2 class="pt-4 px-4" align="center">INFORMATION TECHNOLOGY</h2> </section>
+            
+       <div class="container p-4 d-flex justify-content-around sticky-top px-4">
+
+          <div ><p>Greetings ,We all welcome you to participate in Technical and Nontechnical Events .You can get a clear description of all Events included with the regarding Event Co-ordinators</p></div>
+          <!-- <div>
+          <img src="./src/img/complete.jpg" width="300" height="500" >
+          </div>  -->
+        </div>
+        <h3>TECHQUILA</h3>
+
+        <!-- Footer Start -->
+        <div id="footer">
+            <div class="bg-light rounded-top p-4">
+                <div class="row">
+                    <div class="col-12 col-sm-6 text-center text-sm-start">
+                        &copy; <a href="#">Information Technology</a>, All Right Reserved. 
+                    </div>
+                    <div class="col-12 col-sm-6 text-center text-sm-end">
+                        Designed By <a href="#">Asuvath Jahith-IT(IV-A)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
